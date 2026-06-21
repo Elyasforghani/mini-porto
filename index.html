@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyas Forghani | Frontend Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+        }
+        /* Custom Swiper pagination styling to match theme */
+        .swiper-pagination-bullet-active {
+            background: #10b981 !important;
+            width: 24px !important;
+            border-radius: 4px !important;
+        }
+        .swiper-pagination-bullet {
+            background: #6b7280;
+        }
+    </style>
+</head>
+<body class="text-slate-200 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-wider text-emerald-400">ELYAS.DEV</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-emerald-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-emerald-400 transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-emerald-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-20 px-6 relative">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.08),transparent_50%)]"></div>
+        <div class="max-w-4xl text-center z-10">
+            <h2 class="hero-anim text-emerald-400 font-medium tracking-widest text-sm uppercase mb-4">Available for Opportunities</h2>
+            <h1 class="hero-anim text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+                Hi, I'm <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Elyas Forghani</span>
+            </h1>
+            <p class="hero-anim text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                A Frontend Developer transforming structural logic and engineering precision into highly interactive, fluid, and user-centric web architectures.
+            </p>
+            <div class="hero-anim flex justify-center space-x-4">
+                <a href="#projects" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-semibold rounded-lg transition-all shadow-lg shadow-emerald-500/20">View Work</a>
+                <a href="https://github.com/Elyasforghani" target="_blank" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg border border-slate-700 transition-all">GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-5xl mx-auto reveal">
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold text-white mb-6 border-l-4 border-emerald-500 pl-4">About Me</h2>
+                <p class="text-slate-400 leading-relaxed mb-4">
+                    With an academic foundation in engineering, I approach frontend architectures with a unique mathematical and systemic problem-solving mindset. I specialize in breaking down intricate layout mechanics into scalable, clean semantic components.
+                </p>
+                <p class="text-slate-400 leading-relaxed">
+                    My core engineering objective is bridging beautiful layouts with robust, performant execution, focusing closely on dynamic state synchronization, responsive breakpoints, and organic UI transition design.
+                </p>
+            </div>
+            <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/60 text-center">
+                <div class="text-4xl font-bold text-emerald-400 mb-2">1,000+</div>
+                <div class="text-xs tracking-wider text-slate-400 uppercase font-semibold mb-6">Hours Engineering Apps</div>
+                <div class="text-4xl font-bold text-emerald-400 mb-2">5+</div>
+                <div class="text-xs tracking-wider text-slate-400 uppercase font-semibold">Live Real-World Projects</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-900/40 border-y border-slate-800 px-6">
+        <div class="max-w-5xl mx-auto reveal">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Technical Ecosystem</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">JavaScript</div>
+                    <span class="text-xs text-slate-500">ES6+, Async/Await, DOM</span>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">Tailwind CSS</div>
+                    <span class="text-xs text-slate-500">Utility-First, Responsive Design</span>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">GSAP</div>
+                    <span class="text-xs text-slate-500">ScrollTrigger, Timelines</span>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">Swiper.js</div>
+                    <span class="text-xs text-slate-500">Touch Sliders, Carousels</span>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">REST APIs</div>
+                    <span class="text-xs text-slate-500">JSON Fetching, Dynamic Filtering</span>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">Git & GitHub</div>
+                    <span class="text-xs text-slate-500">Version Control & Workflows</span>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">HTML5 & CSS3</div>
+                    <span class="text-xs text-slate-500">Semantic & Modern Layouts</span>
+                </div>
+                <div class="p-6 bg-slate-800/40 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition-colors group">
+                    <div class="text-emerald-400 font-bold mb-1 group-hover:scale-105 transition-transform">Bootstrap</div>
+                    <span class="text-xs text-slate-500">UI Component Grid Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Swiper Component with Live Links) -->
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto reveal">
+        <h2 class="text-3xl font-bold text-white mb-4 text-center">Featured Projects</h2>
+        <p class="text-center text-slate-400 mb-12 max-w-md mx-auto text-sm">Swipe or click navigation below to view live deployment architectures.</p>
+        
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper p-4">
+            <div class="swiper-wrapper mb-12">
+                <!-- Project Slide 1: Hotel Abbasi Clone (Retained) -->
+                <div class="swiper-slide bg-slate-800/40 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between min-h-[420px]">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">UI Clone Mapping</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Hotel Abbasi Clone</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Constructed a high-fidelity rendering clone of a luxury destination layout. Features rigid mobile-first structural scaling, robust layout breakpoint calculations, and pixel-perfect element spacing.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-emerald-300 mb-6">
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">Tailwind CSS</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">HTML5 Semantic</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">Mobile-First</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://elyasforghani.github.io/hotelabbasi-tailwindproject/" target="_blank" class="text-xs bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold px-4 py-2 rounded transition-colors">Live Demo</a>
+                            <a href="https://github.com/Elyasforghani/hotelabbasi-tailwindproject" target="_blank" class="text-xs bg-slate-700 hover:bg-slate-600 text-white font-bold px-4 py-2 rounded transition-colors border border-slate-600">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Slide 2: Password Strength Check (New) -->
+                <div class="swiper-slide bg-slate-800/40 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between min-h-[420px]">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Input Validation & Regex</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Password Security Hub</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            A real-time security validator assessing passphrase entropy. Implements complex RegEx matching against diverse security rules with immediate UI visual feedback based on security score.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-emerald-300 mb-6">
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">RegEx</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">Vanilla JS</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">Tailwind CSS</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://elyasforghani.github.io/password-strength-check/" target="_blank" class="text-xs bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold px-4 py-2 rounded transition-colors">Live Demo</a>
+                            <a href="https://github.com/Elyasforghani/password-strength-check" target="_blank" class="text-xs bg-slate-700 hover:bg-slate-600 text-white font-bold px-4 py-2 rounded transition-colors border border-slate-600">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Slide 3: Simple API Get (New) -->
+                <div class="swiper-slide bg-slate-800/40 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between min-h-[420px]">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">Async Operations & JSON</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">User Data Streamer</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            A lightweight application demonstrating foundational asynchronous JavaScript. Fetches mock data from public REST endpoints, handles parsing, and dynamically populates the DOM.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-emerald-300 mb-6">
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">`fetch()` API</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">JSON</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">CSS Grid</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://elyasforghani.github.io/simple-api-Get/" target="_blank" class="text-xs bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold px-4 py-2 rounded transition-colors">Live Demo</a>
+                            <a href="https://github.com/Elyasforghani/simple-api-Get" target="_blank" class="text-xs bg-slate-700 hover:bg-slate-600 text-white font-bold px-4 py-2 rounded transition-colors border border-slate-600">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Slide 4: Dice Game (New) -->
+                <div class="swiper-slide bg-slate-800/40 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between min-h-[420px]">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">State Management & Gaming</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Combat Dice Game</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Programmed a synchronous browser gaming app built on raw DOM mutation tracking. Governs custom session object updating loops, computational points calculations, and interactive state triggers.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-emerald-300 mb-6">
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">Vanilla JS</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">DOM Manipulation</span>
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">Game Logic</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://elyasforghani.github.io/dice-game/" target="_blank" class="text-xs bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold px-4 py-2 rounded transition-colors">Live Demo</a>
+                            <a href="https://github.com/Elyasforghani/dice-game" target="_blank" class="text-xs bg-slate-700 hover:bg-slate-600 text-white font-bold px-4 py-2 rounded transition-colors border border-slate-600">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Slide 5: Luxury Car (New) -->
+                <div class="swiper-slide bg-slate-800/40 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between min-h-[420px]">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-emerald-400 uppercase">GSAP & Interactive UI</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-3">Luxury Auto Showcase</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            An immersive landing page showcasing luxury vehicles utilizing GSAP ScrollTrigger animations. Features fluid scroll-driven entrance effects, staggered text reveals, and high-performance image rendering.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-emerald-300 mb-6">
+                         
+                            <span class="bg-slate-900 px-3 py-1 rounded-full">Responsive Design</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://elyasforghani.github.io/luxurycar/" target="_blank" class="text-xs bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold px-4 py-2 rounded transition-colors">Live Demo</a>
+                            <a href="https://github.com/Elyasforghani/luxurycar" target="_blank" class="text-xs bg-slate-700 hover:bg-slate-600 text-white font-bold px-4 py-2 rounded transition-colors border border-slate-600">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination bullets -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Experience & Timeline Section -->
+    <section id="experience" class="py-24 bg-slate-900/40 border-y border-slate-800 px-6">
+        <div class="max-w-4xl mx-auto reveal">
+            <h2 class="text-3xl font-bold text-white mb-16 text-center">Background Timeline</h2>
+            
+            <div class="relative border-l-2 border-slate-800 pl-8 space-y-12 ml-4">
+                <!-- Card 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 bg-emerald-500 rounded-full border-4 border-[#0b0f19]"></div>
+                    <span class="text-xs font-semibold text-emerald-400 font-mono">2025 — PRESENT</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Frontend Development Engineering</h3>
+                    <p class="text-sm text-slate-400 mt-2 max-w-2xl">
+                        Dedicated execution of architectural layouts using modern JavaScript. Managing open-source repositories via GitHub workflows with detailed versioning schemas.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 bg-slate-700 rounded-full border-4 border-[#0b0f19]"></div>
+                    <span class="text-xs font-semibold text-slate-500 font-mono">2023 — 2024</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Control Room Operations Operator</h3>
+                    <span class="text-xs text-slate-400 block font-medium">Ava Nama Noor Company</span>
+                    <p class="text-sm text-slate-400 mt-2 max-w-2xl">
+                        Monitored multi-input live feed configurations within strict high-pressure operating loops. Partnered directly with technical teams for real-time video grid troubleshooting and telemetry recording.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 bg-slate-700 rounded-full border-4 border-[#0b0f19]"></div>
+                    <span class="text-xs font-semibold text-slate-500 font-mono">2018 — 2023</span>
+                    <h3 class="text-xl font-bold text-white mt-1">B.Sc. Chemical Engineering</h3>
+                    <span class="text-xs text-slate-400 block font-medium">University of Kurdistan</span>
+                    <p class="text-sm text-slate-400 mt-2 max-w-2xl">
+                        Specialized focus in logical algorithmic modeling and systemic mapping. Published dynamic matrix data verification processes within the 9th International Conference on Chemical Engineering frameworks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto text-center reveal">
+        <h2 class="text-3xl font-bold text-white mb-4">Let's Synthesize Something Great</h2>
+        <p class="text-slate-400 mb-8 max-w-md mx-auto text-sm">
+            Interested in optimizing clean interfaces, discussing project roles, or tracking architectural solutions? Let's talk.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm">
+            <a href="mailto:elyasfgidev@gmail.com" class="flex items-center space-x-2 text-emerald-400 hover:underline">
+                <span>elyasfgidev@gmail.com</span>
+            </a>
+            <span class="hidden sm:inline text-slate-700">|</span>
+            <span class="text-slate-400">(+98) 992 134 7616</span>
+            <span class="hidden sm:inline text-slate-700">|</span>
+            <a href="https://github.com/Elyasforghani" target="_blank" class="text-slate-400 hover:text-white transition-colors">
+                GitHub Profile
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 text-center text-xs text-slate-600 bg-slate-900/20">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Provided Image Added Here -->
+            <img src="1.png" alt="Elyas Forghani" class="mx-auto rounded-full w-24 h-24 object-cover mb-4 border-2 border-slate-800 p-0.5" />
+            <p>&copy; 2026 Elyas Forghani. All rights reserved. Built using Tailwind, Swiper & GSAP.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper.js Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- GSAP core & ScrollTrigger Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="js/master.js">
+       
+    </script>
+</body>
+</html>
